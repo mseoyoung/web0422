@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-  <g id="icon-nav-close" transform="translate(-10 -19)">
-    <rect id="box" width="28" height="28" transform="translate(10 19)" fill="#f9e5c9" opacity="0"/>
-    <path id="icn" d="M720.133,362.615l8-8,8,8" transform="translate(-330.615 761.633) rotate(-90)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
-    <path id="icn-2" data-name="icn" d="M720.133,362.615l8-8,8,8" transform="translate(378.615 -694.633) rotate(90)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
-  </g>
-</svg>
