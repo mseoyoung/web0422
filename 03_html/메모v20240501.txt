@@ -1,0 +1,17 @@
+1. 어제 학습 반복
+2. HTML 이란?
+<!DOCTYPE html>최근 html5버전
+<html lang="en">languge /english
+                ko= Koran, ja=japnese, zh=chinese
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!----파비콘을 넣을꺼야!-->
+    <title>네이버</title>
+</head>
+<body>
+     Hello Hello
+</body>
+</html>
