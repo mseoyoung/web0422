@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* 클래스 */
+/* 레이아웃 유형1의 전체크기 */
+.container1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*콘텐르는 가로 중앙 배치: margin:auto */
+/* div1~4는 레이아웃 유형1의 각 박스 크기와 배경색 */
+.div1 {
+    background-color: aqua;
+    height: 100px;
+
+}
+
+.div2 {
+    background-color: beige;
+    height: 300px;
+}
+
+.div3 {
+    background-color: chocolate;
+    height: 200px;
+}
+
+.container2 {
+    display: inline-block;
+
+}
+
+.div4 {
+    background-color: darkcyan;
+
+}
+
+
+/* div5~7는 레이아웃 유형1의 각 박스 크기와 배경색 */
+/* 레이아웃 유형2:float */
+.boxSize {
+    width: 400px;
+    height: 200px;
+}
+
+.div5 {
+    background-color: blue;
+}
+
+.div6 {
+    background-color: green;
+
+}
+
+.div7 {
+    background-color: blueviolet;
+
+}
+
+.container3 {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.container4 {
+    display: flex;
+}
