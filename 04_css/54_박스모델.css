@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* 박스모델
+width:auto;-100%,내용크기
+height:auto- 내용크기
+boder: 테두리
+border-style:선종류
+boder-width:선굵기
+border-color:선색
+padding: 패딩
+margine:여백
+box-sizing: content-box;
+
+박스의 겉모습 크기:width+ border+padding
+box-sizing: border-box;
+박스의 겉모습 크기:width- border와padding이 박스의 안쪽으로 지정, border와 padding 크기 합이 width 절반 크기보다 작게 지정해야 한다.
+
+ */
+body {
+    margin: 0;
+}
+/* 테두리를 지정하려면 스타일은 반드시 지정해야 한다 */
+div {width: 200px;
+    height: 200px;
+border-style: solid;
+border-width: 30px;
+border-color: blue;
+    background-color: aqua;
+    padding: 30px;
+    margin: 100px;
+    box-sizing: border-box;
+}
+/* 인라인 요소는 width, height, box-sizing 가 적용되지 않는다.
+display: 적용 */
+span {width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    background-color: bisque;
+    padding: 50px;
+    margin: 100px;
+    box-sizing: border-box;
+}
+/* 레이아웃 요소는 *box-sizing:border-box; 사용하며
+border(테두리)와 padding(패딩)크기가 width와 height에 포함된다.  */
+

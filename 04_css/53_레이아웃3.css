@@ -1,0 +1,37 @@
+@charset "utf8";
+
+.wrap {
+    display: flex;
+
+}
+
+/* 선택자 
+1.클래스: .이름
+2.그룹:,
+3.요소(태그,타입);태그명
+4.하위:부모 . 자식(손자)
+*/
+/* div div { width: 400px; height: 200px;}
+부모는 플레스 컨테이너가 되고, 자식만 플렉스 아이템이 된다 */
+
+.right_wrap{width: 1000px;}
+.header {
+    width: 200px;
+    background-color: #999;
+}
+
+    
+.slide {
+    height: 400px;background: #eee;
+
+}
+
+.banner {
+   height: 200px; background: #ccc;
+
+}
+
+.notice {
+   height: 250px; background: #aaa;
+
+}
