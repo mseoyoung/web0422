@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 개별형
+   list-style-type
+   https://www.w3schools.com/cssref/pr_list-style-type.php
+   ul에 지정할 수 있는 값은 disc(기본값), circle,square 나머지는 ol에 지정한다.
+   
+   decimal(1,2,.....), deciaml-leading-zero  (01,02...), lower-alpaha(a,b...), upper-alpha(A,B..),lower-roman(I,ii)+,....  
+    list-style-position  list-style-image*/
+
+/* 속기형 list-style*/
+/* ul은 왼쪽 패딩과 위아래 여백이 있다. */
+
+ul {
+    padding-left: 40px;
+    margin: 16px 0;
+    border: 5px solid;
+
+
+
+
+}
+
+li {
+    border: 1px solid red;
+    list-style-type: none;
+
+}
+
+li:nth-of-type(1) {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+li:nth-of-type(2) {
+    list-style-type: square;
+}
+
+li:nth-of-type(3) {
+    list-style-type: circle;
+    list-style-image: url(../assets/list.svg);
+}

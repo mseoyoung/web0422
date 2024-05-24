@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 부모요소  */
+
+/* dispaly:flex;인 부모 요소의 지정할 수 있는 속성
+1.flex-direction:row(가로 정렬)
+2.flex-wrap
+3.주축(교차축)정렬
+fiex-direction:row이면 주축이 가로(교차축은 세로)
+ fiex-direction:column이면 주축이 세로
+(교차축 은 가로)
+justify-content:주축 
+flex-start,
+flex-end, 
+center
+space-between
+space-evenly
+align-ltem */
+
+
+
+/* 부모요소  */
+.box {
+    display: flex;
+    /* 줄바꿈 */
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 1500px;
+    height: 200px;
+    margin: 12px;
+
+}
+
+.box1 {
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.box2 {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/* 자식 요소 */
+/* flex-glow:성장x */
+/* flex-shrink: 수축0 */
+.box div {
+    width: 360px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+
+.box1 div:nth-of-type(4n) {
+    margin-right: 0;
+}
