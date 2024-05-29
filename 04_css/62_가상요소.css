@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+   /* 선택자 before:이전
+     선택자 after: 이후*/
+        p::before {
+            content: "●";
+            color:red;
+            font-size: 8px;
+            margin-right: 8px;
+            
+        }
+/* 이모지 삽입 윈도우 ;콜론*/
+        p::after {
+            content: "💖";
+        }
+
+

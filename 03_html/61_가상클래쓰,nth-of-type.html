@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../04_css/61_가상클래스,nth-of-type.css">
+    <style>
+        /* 첫번째 자식 요소 p */
+        /* p의 부모 즉, div의 자식 요소 중 첫 번째 요소를 선택해서
+           글자색을 빨강색으로 지정한다.  */
+        p:nth-of-type(1) {
+            color: blue;
+        }
+
+        p:first-of-type {
+            color: lightcoral;
+        }
+
+        p:last-of-type {
+            color: lightpink;
+        }
+
+        p:nth-of-type(2n) {
+            font-style: italic;
+        }
+
+        h3:nth-child(5) {
+            color: red;
+        }
+
+        h2:first-child {
+            background-color: yellow;
+        }
+
+        p:last-child {
+            background-color: aqua;
+        }
+
+        p:nth-child(2 {
+                background-color:mediumseagreen;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>가상 클래쓰</h1>
+    <b>:nth-of-type(n), :nth-child(n)이 있다.</b>
+    <p>괄호 안에 n은 숫자(1,2....) 또는 수열(2n,2n+1,3n)이다.</p>
+    <div>
+        <h2>가상 클래스 선택자</h2>
+        <p>단락 1이다.</p>
+        <p>단락 2이다.</p>
+        <p>단락 3이다.</p>
+        <p>단락 4이다.</p>
+        <p>단락 5이다.</p>
+        <p>단락 6이다.</p>
+        <p>단락 7이다.</p>
+        <p>단락 8이다.</p>
+    </div>
+
+</body>
+
+</html>
