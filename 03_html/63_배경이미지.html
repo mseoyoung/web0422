@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 배경 관련 속성
+        background-image: 배경이미지
+        background-reapeat: 반복 여부
+        background-position: 위치
+        background-size: 크기
+        background-attachment: 고정여부
+        background-color: 배경색  */
+        p {
+            width: 400px;
+            height: 2400px;
+            border: 1px solid;
+            background-image: url(../assets/figma.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100px;
+            background-color: yellowgreen;
+            background: url(../assets/figma.png)no-repeat 50% 50%/100px yellowgreen;
+        }
+    </style>
 </head>
+
 <body>
     <h1>배경이미지</h1>
     <p>background-image, background-repeat,background-position,
-    background-size, background-attachment 등이다. </p>
-    <div></div>
+        background-size, background-attachment 등이다. </p>
+
 </body>
+
 </html>
