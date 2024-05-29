@@ -13,25 +13,34 @@
         background-size: 크기
         background-attachment: 고정여부
         background-color: 배경색  */
+
+
+        div {
+            height: 1000px;
+        }
+
         p {
-            width: 400px;
-            height: 2400px;
+            height: 600px;
             border: 1px solid;
             background-image: url(../assets/figma.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: 100px;
             background-color: yellowgreen;
-            background: url(../assets/figma.png)no-repeat 50% 50%/100px yellowgreen;
+            background-attachment: fixed;
+            background: url(../assets/bg.jpg)no-repeat 0% 50%/cover fixed yellowgreen;
         }
     </style>
 </head>
 
 <body>
     <h1>배경이미지</h1>
-    <p>background-image, background-repeat,background-position,
-        background-size, background-attachment 등이다. </p>
-
+    <div></div>
+    <div>
+        <p>background-image, background-repeat,background-position,
+            background-size, backgrond-attachment 등이다. </p>
+    </div>
+    <div></div>
 </body>
 
 </html>

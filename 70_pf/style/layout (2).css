@@ -46,7 +46,7 @@ section {width: 940px; margin: auto;}
 
 /* header */
 header {
-    background: url(../assets/bg-light.png);
+    background: url()no-repeat 50% 50%/cover fixed;
 }
 /* section */
 /* footer */
