@@ -2,12 +2,10 @@
 @import url(reset.css);
 @import url(typo.css);
 
-/* layout(배치) */
-/* 박스모델 속성, display */
-
-
+/* :root는 HTML 태그를 가리킨다. */
 :root {
-    scroll-behavior: :smooth;
+    /*  to the top 버튼을 부드럽게 스크롤 */
+    scroll-behavior: smooth;
 }
 
 /* navigation */
@@ -39,15 +37,14 @@ nav li:first-child::after {
 
 /* header */
 header {
+    /* 패럴렉스 스크롤링 기법 */
     background: url(../assets/bg-light.png) no-repeat 50% 50%/cover fixed;
     line-height: 200px;
 }
 
-
 /* main */
 main {
-    padding: bottom 200px;
-    ;
+    padding-bottom: 200px;
 }
 
 section {
