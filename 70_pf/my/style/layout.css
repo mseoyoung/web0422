@@ -67,6 +67,7 @@ h2 {
 .home-icon {
     width: 100px;
     height: 100px;
+    background:#ccc;
 }
 
 .home-description {
