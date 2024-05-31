@@ -47,7 +47,7 @@ header {
 /* main */
 main {
     padding: bottom 200px;
-    ;
+    
 }
 
 section {
@@ -64,11 +64,6 @@ h2 {
     justify-content: space-between;
 }
 
-.home-icon {
-    width: 100px;
-    height: 100px;
-    background:#ccc;
-}
 
 .home-description {
     width: 790px;
@@ -81,4 +76,11 @@ h3 span {
 /* footer */
 footer {
     text-align: center;
+}
+
+.home-icon {
+    width: 100px;
+    height: 100px;
+    background:yellow;
+    border-radius: 8px;
 }
