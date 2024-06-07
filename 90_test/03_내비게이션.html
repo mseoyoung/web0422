@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url(reset.css);
-        @import url(typo.css);
+* {box-sizing: border-box}
+body
+ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
+    line-height:1.5;
+
+}
+
+/* font의 위계 */
+/* 1depth, main menu */
+.main> li >a {
+    font-size: 1.6rem;
+    color:#999;
+}
+
+.main li:hover a{color:#fff}
+
+
+
+/* 2depth, submenu */
+.sub li a {
+    font-size: 1.4rem;
+    color:#333;
+}
 
         header {
             display: flex;
