@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>기타요소</h1>
+    <h2>서식요소</h2>
+    <p>"샐러맨더"에 대한 검색 결과</p>
+    <hr>
+    <p>여러 종의 <mark>도룡농</mark>은 태평양 북부에 서식합니다.</p>
+    <!-- <small font size-13.333 작은 텍스트 --> <!-- <mark:하이라이트 텍스트 --> 
+     <del>blue</del> <ins>red</ins>
+     <!-- <del>블루 밑줄 취소:삭제된 텍스트, <ins>빨강색 밑줄 :추가된 텍스트-->
+<blockquote>
+     <del>making</del>  <ins>running it</ins>
+</blockquote>
+<!-- <blockquote>:긴 인용문,<q>: 한 줄의 짧은 인용문 -->
+    <!--sub: 아래첨자, sup: 위 첨자 -->
+<p>
+    There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes
+    it so.
+</p>
+<p>피타고라스의 정리는 종종 다음 방정식으로 표현됩니다.a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+<h2>인용문</h2>
+<p>Here is a quote from WWF's Website:</p>
+
+
+<!-- <em>: 강세 -->
+<!--<Blockqoute>:긴 인용문
+    1.'블록레벨 요소' 
+    2. 들여쓰기
+    3. cite 속성
+    <q cite>: 한 줄 짧은 인용문
+        1. 인라인 요소
+        2. 작은 따옴표가 생김
+        <cite>: 작품 제목(이름은 묶지 않는다.)
+            <cite> 작품 제목(책, 영상..) <cite/>
+
+    
+    
+
+    -->
+    <blockquote cite="http://www.worldwildlife.org/who/about">
+        <p>For 60 years, WWF has worked to help people and nature thrive. </p>
+        
+        <p>As the world's leading conservation organization, WWF works in nearly 100 countries. 
+        At every level, we collaborate with people around the world to develop and deliver innovative
+     solutions that protect communities, wildlife, and the places in which they live.</p>
+        </blockquote>
+
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+            <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+          </blockquote>  
+          <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+          <p>
+            When Dave asks HAL to open the pod bay door, HAL answers:
+            <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
+              I'm sorry, Dave. I'm afraid I can't do that.
+            </q>
+          </p>
+             <!-- abbr: 약어, (html,css....)두문자어(mr.,Dr:doctor....) -->
+          <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+          <p>
+            You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language).
+            Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer
+            separate. This is called "separation of concerns."
+          </p>
+          <!-- address: 
+           1.연락처(실제 주소, URL, 전화번호, E-mail 등) 정보 정의
+           2. display:block;
+           3.Font-stylie:italic -->
+           <!-- br CEO: John Doe -->
+            <!--  -->
+          <address>
+          Written by John Doe.<br> 
+          Visit us at:<br>
+          Example.com<br>
+          Box 564, Disneyland<br>
+          USA
+          </address>
+          
+          <p>Contact the author of this page:</p>
+          
+          <address>
+            <a href="mailto:jim@example.com">jim@example.com</a><br>
+            <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+          </address>
+
+
+          <!-- <bdo dir"ltr":양방향
+             ltr: left to right, 왼쪽에서 오른쪽   예) 왼쪽에서 오른쪽
+             rtl: right to left, 오른쪽에서 왼쪽   예)  쪽른오 서예쪽왼
+               img:이미지 파일 연결
+               video: 비디오 파일 연결
+               audio:오디오 파일 연결
+                -->
+          
+          
+          <img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+          <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+          
+
+
+
+
+          <figure>
+            <blockquote>
+              <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+            </blockquote>
+
+         
+            <figcaption>
+              First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George
+              Orwell (Part 1, Chapter 1).
+            </figcaption>
+          </figure>
+          
+          <bdo dir="rtl">This line will be written from right to left</bdo>
+          
+          <p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+          <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+          
+          <p>이 글은 왼쪽에서 오른쪽으로 작성합니다.</p>
+          <p><bdo dir="rtl">이 글은 오른쪽에서 왼쪽으로 작성합니다.</bdo></p>
+          
+          <h2>컴퓨터 코드 요소</h2>
+
+<!--< p>: 단락
+    <br>: 줄바꿈
+    <pre>: 사전(미리)에 지정된 서식으로 표시
+    <hr>:수평 규칙, 구분선 -->
+
+
+          
+          <pre>
+            L          TE
+              A       A
+                C    V
+                 R A
+                 DOU
+                 LOU
+                REUSE
+                QUE TU
+                PORTES
+              ET QUI T'
+              ORNE O CI
+               VILISÉ
+              OTE-  TU VEUX
+               LA    BIEN
+              SI      RESPI
+                      RER       - Apollinaire
+          </pre>
+          
+         <!--code: 1. 한줄로 표현, 프로그래밍 언어로 작성한 코드 정의 
+                   2. mono space-->
+         
+          <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+            </code>
+          
+
+          <pre>
+          <code>
+          x = 5;
+          y = 6;
+          z = x + y;
+          </code>
+          </pre>
+          
+          <p>
+            The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
+            array.
+          </p>
+          <p>
+            함수 <code>selectAll()</code>는 입력 필드의 모든 텍스트를 선택하므로, 사용자가 복사 혹은 삭제를 손쉽게 할 수 있습니다.
+          </p>
+          <!--kdb: 1.키보드의 키 정의 
+                   2.모노스페이스 -->
+
+
+
+
+
+          <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+          <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+          
+          <!-- samp: 프로그래밍 결과 출력 정의 -->
+
+
+
+          <p>Message from my computer:</p>
+          <p><samp>File not found.<br>Press F1 to continue</samp></p>
+          
+          <p>I was trying to boot my computer, but I got this hilarious message:</p>
+          <p>
+            <samp>Keyboard not found <br />Press F1 to continue</samp>
+          </p>
+          
+          
+
+          <!-- var:변수 정의,이탤릭(폰트사이즈) -->
+          <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+          
+          <p>
+            The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+            <var>w</var> the width and <var>h</var> the height of the box.
+          </p>
+          
+</body>
+</html>
