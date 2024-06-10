@@ -19,7 +19,7 @@ h2,
 h3 {
     font-family:NanumSquareNeo-Variable, sans-serif;
 }
-h1{nor}
+h1{font-weight: normal;}
 h1,h3 {
     font-size: 1.5rem;
 }
