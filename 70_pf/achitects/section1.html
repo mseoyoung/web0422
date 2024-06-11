@@ -21,17 +21,38 @@
         margin-right: 16px;
     }
 
+    section {
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    }
+
     h2 {
         position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -110px;
+        margin-top: -16px;
+        /* transform:translate(-50%,-50%) ; */
     }
-    section{}
+
+    div {
+        width: 1496px;
+        height: 745px;
+        background: #ccc;
+    }
 </style>
 
 <body>
     <!-- section 태그는 그 안에 h2~h6 제목이 반드시 존재해야 한다/ h1은 로고 -->
     <section>
         <h2><b>HT</b>Hanatour</h2>
-        <img src="./assets/main_benner2.jpg" alt="메인 배너">
+        <div>
+
+        </div>
+        <!-- <img src="" alt="메인 배너"> -->
+
     </section>
 </body>
 
