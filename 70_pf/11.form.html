@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<h1>폼</h1> 
-<h2>폼은 검색창,로그인 또는 회원가입 페이지 제작시에 사용된다.
-    input 태그의 22가지의 type에 따라 입력란,확인란,라디오 버튼,전송 버튼, 초기화 버튼,... 등이 있다.
-    input 태그는 인라인 요소이다.
-</h2>
-<input type="text">
-<!-- 비밀번호 입력 -->
-<input type="password">
-<!-- 브라우저에 표시되지 않는 텍스트 입력 -->
-<input type="hidden">
+    <h1>폼</h1>
+    <p>폼은 검색창,로그인 또는 회원가입 페이지 제작시에 사용된다.
+        input 태그의 22가지의 type에 따라 입력란,확인란,라디오 버튼,전송 버튼, 초기화 버튼,... 등이 있다.
+        input 태그는 인라인 요소이다.
+    </p>
+    <p>
+      웹 언어
+      1. 클라이언트 언어-프론트 엔드 개발자, 디자인, 퍼블리셔
+         -HtmL + Css +js
+      2. 서버 언어-백엔드 개발자 -java(jsp), php, asp 
+    </p>
+    <form action="login.jsp">
+        <!-- 한 줄 텍스트 입력 -->
+        <!-- 입력란의 value는 초기값을 지정/placeholder: 지워지는 글씨 -->
+         <!-- for와 id의 값이 같아야 한다. -->
+        <label for="user_id">로그인</label>
+        <input id="user_id" type="text" placeholder="아이디를 입력해 주세요"><br>
+        <!-- 비밀번호 입력 -->
+        <label for="user_pw">비밀번호</label>
+        <input id="user_pw" type="password"><br>
+        <!-- 브라우저에 표시되지 않는 텍스트 입력 -->
+        <input type="hidden"><br>
+        <!-- 이메일 입력 -->
+        이메일<input type="email"><br>
+        <!-- 검색어 입력, 돋보기 -->
+        검색<input type="search"><br>
+        <!-- 전화번호 입력 -->
+        전화번호<input type="tel"><br>
+        <!-- 웹주소 입력 -->
+        웹주소<input type="url">
+        <hr>
+        <!-- 여러 개중에서 여러 개 선택, 네모에 선택-->
+        <!-- 확인란과 라디오 버튼의 vlaue는 서버로 전송될 값 -->
+        <label><input type="checkbox" name="chkgroup" value="rule1">회칙1 읽음</label>
+        <label><input type="checkbox" name="chkgroup" value="rule2">회칙2 읽음</label>
+        <label><input type="checkbox" name="chkgroup" value="rule3">회칙3 읽음</label>
+        <!-- 여러 개중에서 1개만 선택, 동그라미 선택-->
+        <!--name 속성이 같아야 라디오 버튼이 그룹핑 된다.  -->
+        <label><input type="radio" name="radiogroup" value="yes">동의함</label>
+        <label><input type="radio" name="radiogroup" value="no">동의 안함</label>
+        <hr>
+        <!-- 전송 , 제출-->
+        <input type="submit" value="로그인">
+        <!-- reset: 초기화 -->
+        <input type="reset" value="reset">
+        <!-- 버튼 타입의 경우 Value는 기타 버튼의 이름 지정-->
+        <input type="button" value="기타버튼">
+        <!-- 이미지 버튼(전송과 초기화 제외) -->
+        <input type="image" src="./../assets/abtn.svg" alt="기타버튼">
+        <button type="submit">로그인</button>
+        <button type="reset">reset</button>
+        <button type="image">기타버튼</button>
+        <!-- 파일 첨부 버튼 -->
+        <input type="file">
+        <hr>
+        <!-- 스핀 버튼, 카운트 -->
+        <input type="number">
+        <!-- 범위 -->
+        <input type="range">
+        <hr>
+        <!-- 2024-06-14 -->
+        <input type="date">
+        <!-- 2024-06-14-오전 09시:50분, 사파리, fire fox는 표시 안됨 -->
+        <input type="datetime-local">
+        <!-- 2024년 06월, fire fox는 표시 안됨 -->
+        <input type="month">
+        <!-- 오전 10:10, fire fox는 표시 안됨 -->
+        <input type="time">
+        <!-- 2024년, 24번쩨 주, fire fox는 표시 안됨 -->
+        <input type="week">
+        <hr>
+        <input type="color">
 
-<!-- 이메일 입력 -->
-<input type="email">
-<!-- 검색어 입력, 돋보기 -->
-<input type="search">
-<!-- 전화번호 입력 -->
-<input type="tel">
-<!-- 웹주소 입력 -->
-<input type="url">
+        <select name="" id="">
+            <option value>국제전화코드</option>
+            <option value>한국(+82)</option>
+            <option value>일본(+81)</option>
+            <option value>중국(+86)</option>
+            <option value>미국(+1)</option>
+        </select>
 
-<hr>
-
-<!-- 여러 개중에서 여러 개 선택, 네모에 선택-->
-<input type="checkbox" name="chkgroup">
-<input type="checkbox" name="chkgroup">
-<input type="checkbox" name="chkgroup">
-
-<!-- 여러 개중에서 1개만 선택, 동그라미 선택-->
- <!--name 속성이 같아야 라디오 버튼이 그룹핑 된다.  -->
-<input type="radio" name="radiogroup" >
-<input type="radio" name="radiogroup" >
-<input type="radio" name="radiogroup" >
-<hr>
-
-
-<!-- 전송 , 제출-->
-<input type="submit" value="로그인">
-<!-- reset: 초기화 -->
-<input type="reset" value="reset">
-<!-- Value는 기타 버튼의 이름 지정-->
-<input type="button" value="기타버튼">
-<input type="image" src="./../assets/login.svg">
-<!-- 파일 첨부 버튼 -->
-<input type="file">
-<hr>
-<input type="color">
-<!-- 2024-06-14 -->
-<input type="date">
-<!-- 2024-06-14-오전 09시:50분, 사파리, fire fox는 표시 안됨 -->
-<input type="datetime-local">
-<!-- 2024년 06월, fire fox는 표시 안됨 -->
-<input type="month">
-<input type="number">
-<!-- 여러 개 중 한 개만 선택 -->
-<input type="range">
-<!-- 오전 10:10, fire fox는 표시 안됨 -->
-<input type="time">
-<!-- 2024년, 24번쩨 주, fire fox는 표시 안됨 -->
-<input type="week">
+    </form>
 </body>
+
 </html>
