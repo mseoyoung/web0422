@@ -8,30 +8,38 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="typo.css">
     <link rel="stylesheet" href="service.css">
-<style> 
-     div div:hover {
-            background-color:#009fda;
-            transition-duration: 1s, 0.5s;
-            transition-timing-function: ease, ease-in;
-            transition-delay: 0s, 1s;
-            transition: background 1s ease 0s, font-size 0.5s ease-in 1s;
+    <style>
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 183px;
-            height: 240px;
-
+            height: 200px;
         }
-</style>
+
+        .flex-container div {
+            padding-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="flex-container">
-        <div>부가서비스 번들</div>
-        <div>수하물 추가 구매</div>
-        <div>사전 좌석 선택</div>
-        <div>사전 기내식 주문</div>
-        <div>지니펫(Jini pet)</div>
-        <div>원클릭 여행 보험</div>
-    </div>
+        <div>
+            <img src="예약/부가서비스번들.png" alt="부가서비스번들.png">
+            <p>부가서비스 번들 </p>
+        </div>
 
+        <div><img src="예약/수하물추가구매.png" alt="수하물추가구매.png">
+            <p>수하물추가구매</p>
+        </div>
+
+        <div><img src="예약/사전좌석안내.png" alt="사전좌석안내.png">
+            <p>사전좌석안내</p>
+        </div>
+
+
+    </div>
 </body>
 
 </html>
