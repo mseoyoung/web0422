@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+.flex-container {
+    display: flex;
+    height: 297px;
+    width: 1293px;
+    margin: 30px;
+    background:#FFF;
+    border: 1px solid;   
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align:center;
+    justify-content: center;
+}
+
+div div {
+    width: 183px;
+    height: 200px;
+    background: #ababab;
+    border-radius: 18px; 
+    margin:30px;
+
+
+}
+
