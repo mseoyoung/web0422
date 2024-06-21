@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+   선택자
+   1. id 선택자: #이름
+   --------------------------------------------
+   2. 조상선택자 하위선택자 조상 부모 포함 , 하위 자식 포함
+   3. 부모선택자>자식선택자
+   -------------------------------------------
+   4. nth-child(n), nth-of-type(n) > 형제관계 선택자
+   5. 형선택자+ 선택자>인접형제선택자 h1+p? 첫번째 p만, p:nth-of-type(1)
+   6. 선택자~ 선택자>h1+p?>다
+   ---------------------------------------
+   7. 가상클래스> :hover, :checked
+   8. 가상 요소 선택자> ::before, ::after
+    
+    
+    */
+        #subject1 {
+            display: none;
+        }
+
+
+        /* checked X */
+        #subject1+label::before {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+            background: no-repeat 0% 0%;
+            background-image: url(../assets/chk_b.svg)no-repeat;
+        }
+
+        /* checked */
+        #subject1:checked+label::before {
+            background-image: url(../assets/chk_a.svg);
+        }
+
+
+        #subject1+label {
+            color: aqua;
+            /* 마우스 포인터 */
+            cursor: pointer;
+        }
+
+        /* 확인란은 margin:  3px 3px 3px 4px;
+        라디오 버튼은 margin:  3px 3px 0 5px;
+    
+    */
+        :checked {
+            width: 23px;
+            height: 23px;
+            /* zoom:2; */
+            /* transform:scale(2) */
+            margin-right: 30px;
+            accent-color: blue;
+        }
+
+        label:nth-of-type(3)~label {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 확인란(checkbox):여러 개 중에 여러 개 선택  -->
+    <h1>확인란과 라디오 버튼</h1>
+    <p>input 태그의 필수 속성에 type, name, value이 있고, checked는 선택속성이다</p>
+    <input type="checkbox" id="subject1" name="chkgroup" value="rule1" checked>
+    <label for="subject1">회칙1</label>
+    <input type="checkbox" id="subject2" name="chkgroup" value="rule2">
+    <label for="subject2">회칙2</label>
+    <input type="checkbox" id="subject3" name="chkgroup" value="rule3">
+    <label for="subject3">회칙3</label>
+    <!-- 라디오버튼(radio):여러개 중 하나만 선택 -->
+    <label><input type="radio" name="radiogroup" value="yes" checked>동의함</label>
+    <label><input type="radio" name="radiogroup" value="n">동의하지 않음</label>
+
+</body>
+
+</html>
