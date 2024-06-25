@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하나투어</title>
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
     <!-- 헤더 -->
     <header>
-        <div class="container">
+        <div id="main_container">
             <h1 class="logo"><a href="#">로고</a></h1>
             <nav class="gnb">
                 <ul class="main">
@@ -62,89 +62,56 @@
 
     <!-- 메인 콘텐츠 -->
 
-    <div class="container">
+  <div class="main_contents">
+    
+  </div>
         <!-- 링크 -->
-        <div id="link">
-            <ul>
-                <li>
-                    <a href="#">
-                        <div><!-- 아이콘 이미지 --></div>
-                    </a>
-                    <a href="#">LINK1</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><!-- 아이콘 이미지 --></div>
-                    </a>
-                    <a href="#">LINK2</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><!-- 아이콘 이미지 --></div>
-                    </a>
-                    <a href="#">LINK3</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><!-- 아이콘 이미지 --></div>
-                    </a>
-                    <a href="#">LINK4</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><!-- 아이콘 이미지 --></div>
-                    </a>
-                    <a href="#">LINK5</a>
-                </li>
-            </ul>
+        
         </div>
 
         <!-- 배너 -->
         <div id="banner">
-            <a href="#">
-                <div><!-- 배너 이미지 --></div>
+
+                <span><!-- 배너 이미지 --></span>
             </a>
             <div>
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p><a href="#"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat quis minus, sed tempora a sintet ducimus deleniti odio vel reprehenderit e labore ex
-                        aliquam cum!</p></a>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat quis minus, sed tempora a sintet ducimus deleniti odio vel reprehenderit e labore ex
+                    liquam cum!</p></a>
             </div>
             <a href="#"><img src="../assets/arrow.svg" alt="배너버튼"></a>
 
         </div>
 
         <!-- 공지사항 및 갤러리 -->
-        <div class="tab1">
-            <ul>
-                <li><span>Lorem ipsum, dolor sit amet consectetur adipisicing...</span>0000.00.00</li>
-                <li><span>Lorem ipsum, dolor sit amet consectetur adipisicing...</span>0000.00.00</li>
-                <li><span>Lorem ipsum, dolor sit amet consectetur adipisicing...</span>0000.00.00</li>
-                <li><span>Lorem ipsum, dolor sit amet consectetur adipisicing...</span>0000.00.00</li>
-            </ul>
-        </div>
+        <input type="radio" name="btn" id="btn1" checked>
+        <label for="btn1">공지사항</label>
+        <div id="tab_wrap">
+            <div class="tab1">
+                <ul>
+                    <li><a>Lorem ipsum, dolor sit amet consectetur adipisicing...</a>0000.00.00</li>
+                    <li><a>Lorem ipsum, dolor sit amet consectetur adipisicing...</a>0000.00.00</li>
+                    <li><a>Lorem ipsum, dolor sit amet consectetur adipisicing...</a>0000.00.00</li>
+                    <li><a>Lorem ipsum, dolor sit amet consectetur adipisicing...</a>0000.00.00</li>
+                </ul>
+            </div>
+            
+            <!-- 탭2 -->
 
-        <!-- 탭2 -->
-        <input type="radio" name="btn" id="btn2">
-        <label for="btn2">갤러리</label>
-        <div class="tab2">
-            <ul>
-                <li>
-                    <div></div>
-                    <p>Lorem, ipsum dolor.</p>
-                </li>
-                <li>
-                    <div></div>
-                    <p>Lorem, ipsum dolor.</p>
-                </li>
-                <li>
-                    <div></div>
-                    <p>Lorem, ipsum dolor.</p>
-                </li>
-            </ul>
-        </div>
+            <input type="radio" name="btn" id="btn2">
+            <label for="btn2">갤러리</label>
+            <div class="tab2">
 
-    </div>
+                <ul>
+                    <li><a href="#"><span><!-- 이미지 삽입 --></span></a>Lorem, ipsum dolor.</li>
+                    <li><a href="#"><span><!-- 이미지 삽입 --></span></a>Lorem, ipsum dolor.</li>
+                    <li><a href="#"><span><!-- 이미지 삽입 --></span></a>Lorem, ipsum dolor.</li>
+                </ul>
+            </div>
+            
+                </div>
+        </wrab>
 
     <!-- 푸터 -->
     <footer>

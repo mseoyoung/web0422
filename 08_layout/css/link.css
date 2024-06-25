@@ -1,7 +1,4 @@
-@charset "utf-8";
 
-@import url(reset.css);
-@import url(typo.css);
 
 
 /* 링크 영역 */
@@ -18,13 +15,14 @@
 }
 
 
-#link li {
+#link li a {
     display: flex;
     align-items: center;
 }
 
 /* 아이콘 이미지 */
-#link div {
+
+#link ul li span {
     display: inline-block;
     width: 60px;
     height: 60px;
