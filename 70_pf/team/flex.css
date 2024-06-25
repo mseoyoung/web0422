@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+#flex {
+    display:flex;
+    height: 297px;
+    line-height: 297px;
+    width: 1293px;
+    padding: 30px;
+    margin-top: 30px;
+    background: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0,0, 0.12);;;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
