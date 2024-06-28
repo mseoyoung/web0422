@@ -17,14 +17,20 @@
     </style>
 </head>
 <body>
+  <h1>요소 찾기</h1>
     <ul>
         <li id="orange">목록1</li>
-        <li class="red">목록2</li>
+        <li class="red">목록2 - index 0</li>
+        <li class="red">목록2 - index 1</li>
+        <li class="red">목록2 - index 2</li>
         <li>목록3</li>
         <li id="green">목록1</li>
-        <li class="aqua">목록2</li>
+        <li class="aqua">목록2-index 0</li>
+        <li class="aqua">목록2-index 1</li>
         <li>목록3</li>
       </ul>
+
+<p class="aqua">나는 유엘 밖의 아쿠아 -index 2</p>
 
       <script>
         //변수=값;
@@ -38,6 +44,17 @@
         //문서의 아이디가 orange인 요소를 가져와서: document.getElementById("orange")>대소문자 구별
         //글자색:>style.color
         document.getElementById("orange").style.color="orange";
+        //index는 0번부터
+        document.getElementsByClassName("red")[0].style.color="red";
+        document.getElementsByTagName("li")[5].style.borderTop="1px solid";
+       
+       
+        //단일 요소 선택:단수
+        document.querySelector("ul").style.borderLeft="5px solid";
+        document.querySelector("#green").style.width="400px";
+        document.querySelector(".aqua").style.borderTop="solid";
+        //같은 요소가 한 개 이상 :복수
+        document.querySelectorAll(".aqua")[2].style.color="aqua";
         //객체: document
         //메소드: getElementById()-동작
         //함수: function()
@@ -45,7 +62,7 @@
         //대입(할당) 연산자: =
         //리터럴(값): 문자열 데이터> "orange"(대소문자는 안됨)
         //객체.style.css
-        //문장의 끝은 ;세미콜론
+        //문장의 끝은 ;세미콜론(단, 선언적 함수와 제어문은 제외)
 
 
 
