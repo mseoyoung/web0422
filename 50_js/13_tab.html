@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{font-size: 20px; display: none;}
-        div.on{display: block;}
+        #tabs>div{font-size: 20px; display: none;}
+        #tabs>div.on{display: block;}
       
     </style>
 </head>
 <body>
     <h1>탭 </h1>
-    <ul>
-        <li><a href="#" class="red">버튼1</a></li>
-        <li><a href="#" class="black">버튼2</a></li>
-    </ul>
-   <div class="on">첫 번째 콘텐츠</div>
-   <div>두 번째 콘텐츠</div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab1" >공지사항</a></li>
+            <li><a href="#tab2" >갤러리</a></li>
+        </ul>
+           <div class="on" id="tab1">첫 번째 콘텐츠</div>
+           <div id="tab2">두 번째 콘텐츠</div>
+    </div>
     
 
     <script>
@@ -29,11 +31,13 @@
 
 
         //요소 찾기
-         const btn1 = document.querySelector('.red');
-         const btn2 = document.querySelector('.black');
-         const p = document.querySelector('p');
-         //p.style.color = "red";
-         
+         const btn1 = document.querySelectorAll('#tabs a').item(0);
+         const btn2 = document.querySelectorAll('#tabs a').item(1);
+         const cont1 = document.querySelectorAll('#tabs>div')[0];
+         const cont2 = document.querySelectorAll('#tabs>div')[1];
+         //console.log(cont1);
+         //console.log(cont2);
+
          
          //이벤트 처리
          //버튼1을 클릭하면
@@ -41,12 +45,16 @@
 
         btn1.onclick = function(){
             //p.style.color="red"
-            p.classList.add('on');
+        cont1.classList.add('on');
+        cont2.classList.remove('on');
+
+        
         }
         //버튼1을 클릭하면
         //p에 클래스 on을 제거한다.
         btn2.onclick = function (){
-            p.classList.remove('on');
+            cont2.classList.add('on');
+            cont1.classList.remove('on');
         }
 
 
