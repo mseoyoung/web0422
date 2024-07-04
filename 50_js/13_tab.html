@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{font-size: 20px; display: none;}
+        div.on{display: block;}
+      
+    </style>
+</head>
+<body>
+    <h1>탭 </h1>
+    <ul>
+        <li><a href="#" class="red">버튼1</a></li>
+        <li><a href="#" class="black">버튼2</a></li>
+    </ul>
+   <div class="on">첫 번째 콘텐츠</div>
+   <div>두 번째 콘텐츠</div>
+    
+
+    <script>
+        /* 버튼1을 클릭하면 첫 번째 콘텐츠가 보이고,
+        두 번째 콘텐츠를 숨기고, 버튼2를 클릭하면 두 번째 콘텐츠는 보이고
+        첫번째 콘텐츠를 숨기시오.
+        (단, classList를 사용할 것!), css변경만 하면 된다.
+         */
+
+
+        //요소 찾기
+         const btn1 = document.querySelector('.red');
+         const btn2 = document.querySelector('.black');
+         const p = document.querySelector('p');
+         //p.style.color = "red";
+         
+         
+         //이벤트 처리
+         //버튼1을 클릭하면
+         //p에 클래스 on을 추가한다.
+
+        btn1.onclick = function(){
+            //p.style.color="red"
+            p.classList.add('on');
+        }
+        //버튼1을 클릭하면
+        //p에 클래스 on을 제거한다.
+        btn2.onclick = function (){
+            p.classList.remove('on');
+        }
+
+
+    </script>
+
+</body>
+</html>

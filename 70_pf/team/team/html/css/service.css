@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-#service{
+.service{
     flex-shrink: 0;
     position: relative;
     padding-top: 20px;
@@ -27,7 +27,7 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-#service::before {
+.service::before {
     content: '';
     position: absolute;
     left:0;
@@ -37,28 +37,28 @@ body {
     background: #ababab;
     transition: 0.3s;
 }
-#service>div {
+.service>div {
     position: relative;
 }
-#service p {
+.service p {
     font-size: 15px;
 }
 
-#service:hover {
+.service:hover {
     overflow: visible;
 }
-#service:hover::before{
+.service:hover::before{
     /* height: 240px; */
     transform:scaleY(1.25);
     background-color: #009fda;
 }
 
-#su {
+.su {
     position: relative;
     top: 70px;
     transition: .3s;
 }
-#service:hover #su {
+.service:hover #su {
     top:0;
 }
 
