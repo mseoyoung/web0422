@@ -11,6 +11,9 @@
 */
 section {
     height: 100vh;
+    background:url(../assets/1.png)
+    no-repeat -299px 0/cover;
+    
 }
 
 .ibx {
@@ -19,10 +22,11 @@ section {
     width: 1120px;
     margin: 0 auto;
     height: 100%;
-    border:1px solid ;
+
 }
 
 /* 섹션4 */
 #s4 .cont {
     background-color: aqua;
+    width: 560px;
 }
