@@ -43,3 +43,6 @@ section {
     padding: 16px 24px;
     background-color: #5E2BB8;
 }
+#s4 .link a:first-child{
+    margin-right: 20px;
+}
