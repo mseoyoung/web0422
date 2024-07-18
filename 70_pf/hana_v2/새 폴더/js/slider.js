@@ -19,11 +19,11 @@
 $(Document).ready(function(){
     //문서가 준비되면 실행할 코드;
 
-    $('.bxslider').bxSlider({
+    $('.slide').bxSlider({
         // mode: "horizontal"(기본값), "fade", "vertical"
-        mode: "fade",
+        //mode: "fade",
         // speed: 500(기본값), 밀리초
-        speed: 1000,
+        //speed: 1000,
         // slieMargin: 0
         // https://gsgd.co.uk/sandbox/jquery/easing/ 
         // easing: null
