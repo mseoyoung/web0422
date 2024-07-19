@@ -11,14 +11,26 @@
     <script>
         window.addEventListener('DOMContentLoaded',function(){
 
-            document.querySelector('p');
+            const p = document.querySelector('p');
             window.addEventListener('scroll',function(){
-    
-            });
-        });
-        //요소 찾기
+                p.innerHTML = Math.floor(pageYOffset);
+                if(p.innerHTML >= 300) {
 
-        //스크롤 이벤트
+                    document.body.style.background ="yellow";
+                }else{
+                    document.body.style.background ="transparent";
+                }
+            });
+            
+            
+
+        });
+    
+
+
+
+
+
     </script>
 </head>
 <body>
