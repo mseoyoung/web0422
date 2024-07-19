@@ -19,7 +19,7 @@
 $(Document).ready(function(){
     //문서가 준비되면 실행할 코드;
 
-    $('.slide').bxSlider({
+    $('.slider').bxSlider({
         // mode: "horizontal"(기본값), "fade", "vertical"
         //mode: "fade",
         // speed: 500(기본값), 밀리초
