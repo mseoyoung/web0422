@@ -14,7 +14,11 @@
         }
 
         header {
+            z-index: 9999;
             position: fixed;
+        }
+        header p {
+            font-size: 10rem;
         }
 
         .section {
@@ -22,31 +26,59 @@
         }
 
         #s1 {
-            background: lightcoral;
+            background: lightblue;
         }
 
         #s2 {
-            background: lightcyan;
+            background: lightcoral;
         }
 
         #s3 {
-            background: lightgray;
+            background: lightgreen;
             position: relative;
         }
 
         #s3 .mbx {
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 90%;
             transform: translate(-50%, -50%);
             font-size: 50px;
-            border: 1px solid;
+            border: 1px solid black;
+            opacity: 0;
+            transition: .1s;
         }
-
-        #s4 {
-            background: lightgreen;
+        
+        #s3 .mbx.active {
+            top: 50%;
+            opacity: 1;
         }
+        
+        
+#s4 {
+ background: lightgray;}
+ 
     </style>
+    <script>
+        //로드이벤트
+        window.addEventListener("DOMContentLoaded",function(){
+            //스크롤 이벤트
+            const p= document.querySelector('p');
+            const mbx= document.querySelector('.mbx');
+            window.addEventListener('scroll',function(){
+
+                p.innerHTML = Math.floor(pageYOffset);
+                //스크롤양 비교
+                if(p.innerHTML >= 1750) {
+                    classList.add('active');
+                } else {
+                    //.active 클래스를 제거
+                    classList.remove('active');
+                }
+
+            });
+        });
+    </script>
 </head>
 
 <body>
