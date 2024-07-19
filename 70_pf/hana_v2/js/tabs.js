@@ -1,4 +1,5 @@
 //section2 -탭
+//Vanila Js
 window.addEventListener('DOMContentLoaded',function(){
     // 요소 찾기
 const btn1 = document.querySelectorAll('#tabs a').item(0);
