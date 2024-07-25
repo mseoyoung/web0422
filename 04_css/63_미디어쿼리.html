@@ -29,7 +29,14 @@
                 1. 선언 
                     :root {--변수명: 값;}
                 2. 사용
-                    선택자 {속성: var(--변수명);}
+            
+                선택자 {속성: var(--변수명);}
+            
+            scale()
+            url(이미지)
+            left: calc(10-2)
+            var()
+            translate()
         */
 
         /* 색상 */
@@ -117,7 +124,8 @@
 
         /* https://www.w3schools.com/css/css_rwd_intro.asp */
         /* 최소 600px 이상의 장치: tablet */
-        @media (min-width: 600px) {
+        /* 미디어쿼리 중단점 @media(조건){ } */
+        @media (min-width: 576px) {
             .section {display: flex; flex-wrap: wrap;}
             .menu {flex:33%;}
             .main {flex:67%;}
@@ -125,7 +133,7 @@
         }
         
         /* 최소 768이상의 장치: desktop */
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             .menu {flex:25%;}
             .main {flex:50%;}
             .aside {flex:25%;}
