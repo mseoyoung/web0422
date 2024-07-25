@@ -17,6 +17,7 @@ ul {
 
 a {
     text-decoration: none;
+    text-align: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
@@ -32,14 +33,17 @@ body {
 .main>li>a {
    font-size: 1.6rem;
    color: #999;
+ 
 }
 .main li:hover a {
    color: #fff;
+  
 }
 /* 2depth, submenu */
 .sub li a {
    font-size: 1.4rem;
    color: #333;
+  
 }
 
 /* header */
@@ -52,10 +56,6 @@ header {
     margin: 0 auto;
     height: 100%;
 
-}
-
-.gnb {
-    border: 1px solid;
 }
 
 /* 1depth */
