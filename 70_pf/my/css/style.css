@@ -12,9 +12,108 @@ body {
 h2, h3 {
     font-weight: normal;
 }
-img,video{
-    width:100%;
-    max-width:100%;
-    height:auto
 
+img {
+    max-width: 100%;
+}
+
+p{font-size: 2vw;}
+
+section {
+    width: 1480px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 96px 0;
+}
+
+
+h1{ 
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+h2 {
+    color: #000;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+section>p {
+    margin-bottom: 48px;
+    font-size: 15px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    width: 355px;
+    margin-right: 20px;
+}
+
+li:nth-child(4n) {
+    margin-right: 0;
+}
+
+div {
+    height: 240px;
+    background: #ccc;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin: 24px 0;
+}
+
+li p {
+    font-size: 15px;
+    margin: 24px 0;
+}
+
+li h3{
+    font-size: 22px;
+    text-align: center;
+}
+
+a {
+    display: block;
+    background:#000;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+b {
+    background: #FFb800;
+    color:#000;
+    padding: 8px 16px;
+    margin-right: 16px;
+}
+
+#banner {
+    position:relative ;
+    width: 1510px;
+    height: 763px;
+    justify-content: center;
+    background:red;
+    margin: auto;
+}
+
+h2 {
+    position: absolute;
+    font-size: 22px;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -16px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    /* transform:translate(-50%,-50%) ; */
+}
+
+.taste{
+    display: flex;
+    width: 427px;
+    height: 400px;
 }

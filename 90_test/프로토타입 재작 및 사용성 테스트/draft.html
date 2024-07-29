@@ -22,13 +22,28 @@
         section {
             width: 1480px;
             margin: 0 auto;
+            text-align: center;
             padding: 96px 0;
         }
 
+
+        h1{ 
+            font-size: 40px;
+            color: #000;
+            text-align: center;
+        }
         h2 {
             color: #000;
             padding-bottom: 24px;
             margin-bottom: 24px;
+            position: absolute;
+            font-size: 22px;
+            left: 50%;
+            top: 50%;
+            margin-left: -110px;
+            margin-top: -16px;
+            letter-spacing: 4px;
+            font-weight: 400;
         }
 
         section>p {
@@ -92,23 +107,17 @@
             background:red;
             margin: auto;
         }
-    
-        h2 {
-            position: absolute;
-            font-size: 22px;
-            left: 50%;
-            top: 50%;
-            margin-left: -110px;
-            margin-top: -16px;
-            letter-spacing: 4px;
-            font-weight: 400;
-            /* transform:translate(-50%,-50%) ; */
-        }
-    
-        .taste{
+ 
+        .taste img{
             display: flex;
-            width: 355px;
-            height: 290px;
+            margin: auto;
+            width: 427px;
+            height: 400px;
+            justify-content: center;
+        }
+
+        .content p, li{
+            font-size: 15px;
         }
 
     </style>
@@ -156,40 +165,41 @@
 
     <!-- 섹션1-->
 
-    <div id="banner"><h2><b>MC</b>Donald</h2></div>
+    <div id="banner"><h2><b>MC</b>Donald's</h2></div>
 
 
 
     <!-- 섹션 2-->
     <section>
-        <ul>
-            <li>
-                <div class="taste"><img src="../프로토타입 재작 및 사용성 테스트/images/2.png" alt="진주고추크림치즈버거"></div>
-                <h3>한국인의 맛:진주고추크림치즈버거</h3>
-                <p>햇빛을 받고 자라 맛 좋은 진주산 고추가 매콤새콤 고추 피클이 되어 부드럽고 고소한 크림치즈에 쏙</p>
+        <h1>McDonald LIVE'S</h1>
+   
+            <ul>
+                <li>
+                    <div class="taste"><img src="../프로토타입 재작 및 사용성 테스트/images/2.png" alt="진주고추크림치즈버거"></div>
+                    <h3>한국인의 맛:진주고추크림치즈버거</h3>
+                    <p>햇빛을 받고 자라 맛 좋은 진주산 고추가 매콤새콤 고추 피클이 되어 부드럽고 고소한 크림치즈에 쏙</p>
+                </li>
+                <li>
+                    <div class="taste" ><img src="../프로토타입 재작 및 사용성 테스트/images/1.png" alt="아이스드립커피"></div>
+                    <h3>맥드라이브 썸머</h3>
+                    <p>맥드라이브에서 상하이 치킨 스냅랙 또는 토마토치즈비프버거 구매시 아이스드립커피무료!</p>
+                </li>
+                <li>
+                    <div class="taste"><img src="../프로토타입 재작 및 사용성 테스트/images/3.png" alt="영동샤인머스캣"></div>
+                    <h3>달콤한 맛! 영동 샤인 머스캣</h3>
+                    <p>달콤한 샤인 머스캣과 청량한 스프트라이트의 상큼한 만남</p>
+                </li>
+            </ul>
 
-            </li>
-            <li>
-                <div class="taste" ><img src="../프로토타입 재작 및 사용성 테스트/images/1.png" alt="아이스드립커피"></div>
-                <h3>맥드라이브 썸머</h3>
-                <p>맥드라이브에서 상하이 치킨 스냅랙 또는 토마토치즈비프버거 구매시 아이스드립커피무료!</p>
-
-            </li>
-            <li>
-                <div calss="taste"><img src="../프로토타입 재작 및 사용성 테스트/images/3.png" alt="영동샤인머스캣"></div>
-                <h3>달콤한 맛! 영동 샤인 머스캣</h3>
-                <p>달콤한 샤인 머스캣과 청량한 스프트라이트의 상큼한 만남</p>
-            </li>
-        </ul>
 
     </section>
     <!--푸터 -->
     <footer>
         <!-- 오른쪽 콘텐츠 -->
-        <div class="right_contents">
+        <div class="content">
             <!-- 하단 메뉴 -->
             <ul>
-                <li><a href="#"></a>개인정보처리방침</li>
+                <li><a href="#"></a>개인정보처리방침|</li>
                 <li><a href="#"></a>서비스이용약관</li>
                 <li><a href="#"></a>회사명: 한국맥도날드(유)</li>
                 <li><a href="#"></a> 사업자등록번호:101-81-26409</li>
@@ -200,5 +210,4 @@
     </footer>
     </div><!-- //#main_contents -->
 </body>
-
 </html>
