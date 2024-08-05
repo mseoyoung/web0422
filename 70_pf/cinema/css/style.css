@@ -2,8 +2,42 @@
 @import url(reset.css);
 @import url(common.css);
 
+/* 공통 */
 html {
     scroll-behavior: smooth;
+}
+section{padding: 96px 32px 0;}
+
+section h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+    /* 섹션 3*/
+    margin-bottom: 48px;
+}
+#sec3 h2{
+    margin-bottom: 24px;
+
+}
+#sec4 .map {
+    height: 845px;
+}
+/* 섹션2 */
+#sec h2{
+    margin-bottom: 48px;
+}
+#sec h2{
+
+    border-bottom: 1px soild#ccc;
+    padding-bottom:24px;
+    margin-bottom:48px;
+}
+#sec2 li{
+    height: 240px;
+    margin-bottom: 20px;
+}
+#sec2 h3{
+    position: absolute;
+    padding: 8px 24px;
 }
 /* 폰 */
 nav {
@@ -23,9 +57,28 @@ nav {
     }
 
 }
+section ul {
+    display: flex;
+    /* 줄바꿈:flex-wrap: wrap;
+    부모의 가로 크기를 자식이 벗어날 상태일때 줄바꿈 된다 */
+    flex-wrap: wrap;
+}
+#sec h3, li p:last-of-type{
+    margin: 24px 0;
+}
+#sec a{
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+sec li{
+    margin: 0 24px;
+}
+#sec4>p{
+margin-bottom: 48px;
+}
 
-
-
+/* 헤더 */
 header {
     /* 헤더 고정 */
     position: fixed;
@@ -59,7 +112,7 @@ nav ul li:not(:first-child) {
 
 #sec1 {
     position: relative;
-    padding-top: 54px;
+    padding: 54px 0 0;
 }
 
 #sec1 h2 {
@@ -74,17 +127,33 @@ nav ul li:not(:first-child) {
     padding: 8px 16px;
     margin-right: 16px;
 }
-
-
-
-#sec1 div {
-
-    height: 745px;
+#sec4 input{
+width: 100%;
+padding: 12px;
+margin: 8px 0;
 }
 
+
+#sec4 button {
+
+    padding: 12px 20px;
+}
+
+@media(min-width:992px) {
+    section {
+        width: 1480px;
+        margin: 0 auto;
+        padding-top: 96px;
+    }
+/* 섹션2,3 공통 */
 section li {
     width: 355px
 }
+ section li:not(:nth-of-type(4n)){
+    margin-right: 20px;
+ }
+}
+
 /* li 요소 중에서 4의 배수(4,8번째) 요소를 제외한 li요소에 오른쪽 여백을 20px지정 */
 section li:not(:nth-of-type(4n)) {
     margin-right: 20px;
@@ -96,12 +165,7 @@ section li:not(:nth-of-type(4n)) {
     margin-bottom: 48px;
 }
 
-#sec2 ul {
-    display: flex;
-    /* 줄바꿈:flex-wrap: wrap;
-    부모의 가로 크기를 자식이 벗어날 상태일때 줄바꿈 된다 */
-    flex-wrap: wrap;
-}
+
 
 #sec2 h3 {
     position: absolute;
@@ -110,14 +174,19 @@ section li:not(:nth-of-type(4n)) {
 
 #sec2 div {
     height: 100%;
-    background: #ccc;
-}
 
+}
+/* 섹션3 */
 #sec3 h2 {
     border-bottom: 1px solid #111;
     padding-bottom: 24px;
     margin-bottom: 24px;
 }
+
+#sec h3{
+    margin-bottom: 48px;
+}
+
 
 #sec3>p {
     margin-bottom: 48px;
@@ -129,11 +198,11 @@ section li:not(:nth-of-type(4n)) {
 
 #sec3 div {
     height: 240px;
-
+    
 }
 
 #sec3 h3 {
-
+    
     margin: 24px 0;
 }
 
@@ -145,6 +214,9 @@ section li:not(:nth-of-type(4n)) {
     display: block;
     text-align: center;
     padding: 12px 0;
+}
+#sec3 a {
+    background: var(--graya);
 }
 
 /* 섹션4 */
@@ -187,12 +259,10 @@ footer {
     align-items: center;
     height: 85px;
     background: #000;
+    
+}
 
-}
-@media (min-width:992px) {
-    section {
-        width: 1480px;
-        margin: 0 auto;
-        padding-top: 96px;
-    }
-}
+#sec2 ul{
+   display: flex;
+   flex-wrap:wrap;
+}   

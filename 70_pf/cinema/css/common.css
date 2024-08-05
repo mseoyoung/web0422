@@ -30,11 +30,7 @@
 body {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 1.5rem;
-    background:var(--gray3);
-}
-
-h1 {
-    font-weight: normal;
+    background:var(--white);
 }
 
 h1,
@@ -43,10 +39,13 @@ h3 {
     font-family: "NanumSquareNeo", sans-serif;
 }
 
-h1,
-h3 {
+h1
+ {
     font-size: 1.5rem;
 }
+/* 섹션 제목 */
+/* h2의 글자 크기 기본값은 부모 요소 크기의 1.5rem */
+/* font-size: 10px로 지정했으므로 2.4rem은 24px이다. */
 
 h2 {
     font-size: 2.4rem;
@@ -54,28 +53,29 @@ h2 {
 
 /* a태그는 글자색을 상속받지 않는다. */
 a {
-    background:var(--gray1);
+    background:var(--white);
+}
+#sec1 b {
+    background: rgba(0, 0, 0);
+}
+#sec2 h3,#sec button,footer {
+    background:var(--black);
+}
+#sec2, #sec button,  {
+    background: rgba(0, 0, 0);
 }
 
 /* input, button, ::placeholder는 글자색, 글자크기, 글꼴 등을 상속받지 않는다. */
-input {
+input,::placeholder,button {
     font-size: 1.5rem;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-::placeholder {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.5rem;
-    background:var(--graya);
-}
-
-button {
-    font-size: 1.5rem;
-    background:var(--white);
     font-family: "Noto Sans KR", sans-serif;
 }
 
 /* 헤더 */
+.logo{
+    letter-spacing: 4px;
+    font-weight: 400;
+}
 /* 섹션1 */
 #sec1 h2 {
     letter-spacing: 4px;
@@ -103,14 +103,11 @@ footer {
 }
 
 /* 배경색 */
-/* 헤더 */
-header {
-    background:var(--white);
-}
+
 
 /* 섹션1 */
 #sec1 b {
-    background:var(--black);
+    background:var(--white);
 }
 
 #sec1 div {
@@ -133,7 +130,7 @@ header {
 
 /* 섹션4 */
 #sec4 button {
-    background:var(--black);
+    background:var(--white);
 }
 
 #sec4 .map {
