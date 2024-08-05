@@ -61,7 +61,7 @@ a {
 #sec2 h3,#sec button,footer {
     background:var(--black);
 }
-#sec2, #sec button,  {
+#sec2, #sec button {
     background: rgba(0, 0, 0);
 }
 
@@ -78,13 +78,17 @@ input,::placeholder,button {
 }
 /* 섹션1 */
 #sec1 h2 {
+    font-size: 3.6rem;
     letter-spacing: 4px;
     font-weight: 400;
 }
 
 #sec1 b {
+    padding: 12px 16px;
+    margin-right: 16px;
     background:var(--white);
 }
+
 
 /* 섹션2 */
 #sec2 h3 {
@@ -96,13 +100,13 @@ input,::placeholder,button {
     font-size: 2.4rem;
 }
 
-/* 섹션4 */
+
 /* 푸터 */
 footer {
     background:var(--white);
 }
 
-/* 배경색 */
+
 
 
 /* 섹션1 */
