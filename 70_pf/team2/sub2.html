@@ -7,31 +7,24 @@
 </head>
 <body>
     <style>
-        body{margin: 0;}
-        div{
-            width: 100%;
-            height:2451px;
-            background: url(phone.png)no-repeat;
-        }
-        @media (min-width:768px) {
+           body {margin:0;}
+        img {width:100%; height: auto;}
         
-            div{
-            width: 100%;
-            height: 2881px;
-            background: url(tablet.png)no-repeat 0 0/100%;
-        }    
+        .tablet, .desktop {display: none;}
+
+        @media (min-width: 576px) {
+            .phone {display: none;}
+            .tablet {display: block;}
         }
-        @media (min-width:992px) {
-        
-            div{
-            width: 100%;
-            height: 2673px;
-            background: url(desktop.png)no-repeat;
-        }   
+        @media (min-width: 992px) {
+            .tablet {display: none;}
+            .desktop {display: block;}
         }
     </style>
   
 </body>
-
+    <img class="phone" src="assets/phone.png" alt="폰">
+    <img class="tablet" src="assets/tablet.png" alt="테블릿">
+    <img class="desktop" src="assets/desktop.png" alt="데스크탑">
 </body>
 </html>
