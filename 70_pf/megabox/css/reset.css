@@ -11,9 +11,15 @@ ul {
     padding:0;
     list-style: none;
 }
+/* 비율유지
+/*  contain은 100% 이미지가 잘림없이 보여지며, 빈공간이 생길 수 있다.*/
+/*  cover은 100% 빈공간이 생기지는 않지만, 이미지 일부가 잘릴 수 있다.*/
+/* object-position :x위치 y위치 */
 img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: 50% 0%;
     vertical-align: top;
 }
 a {
