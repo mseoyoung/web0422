@@ -43,6 +43,14 @@ section li {
     padding: 54px 0 0;
 }
 
+#sec1{
+    border: 1px solid;
+    height: 39.15vw;
+    /* 1903: 745 = 100:x
+    1903x=745*100 x=39.1387%
+    */
+}
+
 #sec1 h2 {
     position: absolute;
     left: 50%;
@@ -72,15 +80,30 @@ section li {
 }
 
 #sec3>p {
+    position: relative;
     margin-bottom: 48px;
 }
+#sec3 li h3{
+    /* 생략 효과 */
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#sec3 li p:first-of-type{
+    font-size: 15px;
+}
 
-#sec3 h3,
+#sec3 li h3,
 #sec3 li p:last-of-type {
     margin: 24px 0;
 }
 
 #sec3 a {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+#sec3  li a {
     display: block;
     text-align: center;
     padding: 12px 0;
@@ -103,10 +126,10 @@ section li {
     margin: 16px 0 48px;
 }
 
-#sec4 .map {
+/* #sec4 .map {
     height: 260px;
     margin-bottom: 8px;
-}
+} */
 
 /* 푸터 */
 footer {
@@ -152,6 +175,19 @@ nav {
         display: flex;
         flex-wrap: wrap;
     }
+    /* 섹션3 */
+    #sec3 li {
+        position: relative;
+    }
+    #sec3 a{
+        position: absolute;
+        text-align: center;
+        padding: 12px 0;
+    }
+    #sec li p:last-of-type{
+        margin:24px 0 64px;
+    }
+
 
     section li {
         /* calc(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 한다. */
@@ -162,7 +198,7 @@ nav {
         margin-right: 20px;
     }
 
-    /* 섹션4 */
+  /*   /* 섹션4 */
     #sec4 .map {
         height: 420px;
     }
@@ -182,8 +218,7 @@ nav {
         width: 77.77%;
         /* width: 1480px; */
         margin: 0 auto;
-        border: 1px solid red;
-    }
+       
 
     /* 섹션1 */
     #sec1 h2 {
@@ -212,7 +247,12 @@ nav {
 
     /* 섹션4 */
     #sec4 .map {
-        height: 845px;
+      height: 44.4vx;
+        /*  
+       1903:845=100:?
+       1903x=845*100->x=44.4035...%
+       
+       */
     }
 
 }
