@@ -17,7 +17,7 @@ h1{
     font-weight: 700px;
 }
 
-
+/* 전체 크기 */
 .box {
     width: 1920px;
     height: 796px;
@@ -30,6 +30,8 @@ h1{
     text-align: center;
 }
 
+
+/* 매장찾기 */
 .box>.box2 {
     width: 608px;
     height: 249px;
@@ -46,16 +48,16 @@ h1{
     width: 602px;
     height: 237px;
     background-color: #fff;
-    justify-content: center;
+  
+   /*  justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
 }
 
 .container>#choose img{
-display: flex;
-margin: 0 auto;
+    position: absolute;
     width: 140px;
     height:108px;
     /* right:calc(50%-101px); */
-    justify-content:flex-start;
+    justify-content: left;
 }
