@@ -12,10 +12,16 @@ body {
     background: #fff;
 }
 
-h1{
+.box >img h1{
     font-size: 28px;
     font-weight: 700px;
+    text-align: left;
+    top: 0;
+    transform: translate(50%, 50%);
 }
+
+
+
 
 /* 전체 크기 */
 .box {
@@ -48,10 +54,6 @@ h1{
     width: 602px;
     height: 237px;
     background-color: #fff;
-  
-   /*  justify-content: center;
-    align-items: center;
-    text-align: center; */
 }
 
 .container>#choose img{
@@ -60,4 +62,5 @@ h1{
     height:108px;
     /* right:calc(50%-101px); */
     justify-content: left;
+    transform: translate(50%, 50%);
 }

@@ -79,54 +79,28 @@ nav {
 }
 
 /* B영역 */
-#slide {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
+        /* 슬라이드 */
+        #slide {
+            width: 100%;
+            height: 350px;
+        }
 
-#slide ul {
-    position: relative;
-    display: flex;
-    width: 400%;
-    height: 100%;
-    animation: slide 9s infinite;
-}
+        #slide ul {
+            position: relative;
+            top: 0%;
+            height: 1050px;
 
-@keyframes slide {
-    0% {
-        left: 0;
-    }
+        }
 
-    10% {
-        left: -100%;
-    }
+        #slide li {
+            position: absolute;
+        }
+/* 슬라이드 이미지 */
 
-    33% {
-        left: -100%;
-    }
 
-    43% {
-        left: -200%;
-    }
 
-    66% {
-        left: -200%;
-    }
 
-    76% {
-        left: -300%;
-    }
-
-    99.99% {
-        left: -300%;
-    }
-
-    100% {
-        left: 0;
-    }
-}
-
+/* 모달 팝업 */
 #modal {
     display: none;
     position: fixed;
