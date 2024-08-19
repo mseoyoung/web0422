@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            /*border-collapse: separate;(기본값:분리시키다)  */
+            border-collapse: collapse;
+        }
+
+        td {
+        
+            border: 1px solid blue;
+        }
+
+        /*text-align: 가로정렬(텍스트)
+         vertical-align: 세로 정렬
+         */
+         tr:first-child td:first-child{
+            background: yellow;
+            text-align: center;
+            vertical-align: bottom;
+         }
+
+         tr:nth-child(2) td:first-child{
+            background:greenyellow;
+            text-align: right;
+            vertical-align: top;
+         }
+    </style>
+</head>
+
+<body>
+    <h1>테이블 합치기</h1>
+    <!-- 테이블(표)의 기본 구조 -->
+    <!-- table :블록 레벨 요소이며 display:table-->
+    <!-- tr::블록 레벨 요소이며 display:table-cell -->
+    <!-- td -->
+    <!-- thead:테이블헤더-->
+    <!-- tbody:테이블바디 -->
+    <!-- tfoot:테이블푸터-->
+     <!-- 행을 합: rowspan
+          열   합:colspan
+     -->
+    <table>
+        <tr>
+            <!-- 1행1열+1행2열 -->
+            <td colspan="2">1</td>
+             <!-- 1행3열과 2행 3열 -->
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+           <!-- 2행1열+3행1열 -->
+            <td rowspan="2">4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+     <!-- 3행2열+3행3열 -->
+            <td colspan="2">8</td>
+ 
+        </tr>
+    </table>
+</body>
+
+</html>
