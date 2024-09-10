@@ -18,17 +18,66 @@
             length->문자열의 길이
 
             메서드
-            
+
             */
-            let text = "종강";
+            let text1 = "종강";
             let length = text.length;
             Document.write('length ${length}');
 
             let text2 = "We are the so-called \"Vikings\" from the north.";
-            document.write(text2+"<br>");
+            document.write(text2 + "<br>");
 
             console("테스트\n 입니다.");
 
+            let text3 =
+                `The quick
+                 brown fox
+                 jumps over
+                 the lazy dog`;
+            //문자열 리터럴
+            let x = "John";
+            //new 생성자함수
+            let y = new String("John")
+            //문자열 메서드 10가지
+            let str = "Apple, Banana, Kiwi";
+            //Slice(start,end)-> 첫 번째 숫자부터 두 번째 숫자 -1까지 추출
+            let part1 =str.slice(7, 13);
+            document.write(part1 + "<br>");
+
+            let part2 = text.slice(7, 13);
+            document.write(part2 + "<br>");
+
+            //substr(start, length) ->첫번째 숫자부터 두 번째 숫자부터 까지 추출
+            let part3 = text.slice(7, 6);
+            document.write(part3 + "<br>");
+
+            //toUpperCase()대문자
+            let text4 = str.toUpperCase();
+            document.write(text4 + "<br>");
+
+            let text5 = str.toUpperCase();
+            document.write(text5 + "<br>");
+            //concat(문자열1,문자열2,...)->문자열
+            let text6 = text4.concat("",text5);
+            document.write(text6 + "<br>");
+            
+            //문자열.trim ->문자열에 있는 공백 제거
+            let text7 = "      Hello World!      ";
+            let text8 = text1.trim();
+
+            //replace("Microsoft", "W3Schools");->문자열1을 문자열2로 교체 
+            let text9 = "Please visit Microsoft!";
+            let newText = text.replace("Microsoft", "W3Schools");
+            document.write(newText + "<br>");
+
+            let text10="H,e,l,l,o";
+            //split(",")->콤마로 구분하여 문자열을 배열에 저장
+            let arr = text10.split(",");
+            console.log(arr);
+
+            //문자열1.indexof(문자열2)->문자열1에 문자열2가 있는지 검색하여 있으면 해당 첫 글자의 위치를 숫자로 표시하고 없으면 -1을 출력한다.
+            let text11 = "Please locate where 'locate' occurs!";
+            let index = text.indexOf("locate");
         });
     </script>
 </head>
